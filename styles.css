@@ -1,0 +1,158 @@
+
+.blogs .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 5rem;
+  }
+  
+  .blogs .box-container .box {
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: rgb(17 17 17 / 15%) 0px 0.5rem 1rem;
+    overflow: hidden;
+  }
+  
+  .blogs .box-container .box:hover {
+    transform: scale(1.05);
+  }
+  
+  .blogs .box-container .box:hover .image img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+  .blogs .box-container .box .image {
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .blogs .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  
+  .blogs .box-container .box .content {
+    padding: 2rem;
+  }
+  
+  .blogs .box-container .box .content .link {
+    font-size: 2rem;
+    color: #000;
+  }
+  
+  .blogs .box-container .box .content .link:hover {
+    color: #d9296f;
+  }
+  
+  .blogs .box-container .box .content p {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: #3d3d3d;
+    line-height: 2;
+  }
+  
+  .blogs .box-container .box .content .icon {
+    padding-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  
+  .blogs .box-container .box .content .icon a {
+    font-size: 1.4rem;
+    color: #3d3d3d;
+  }
+  
+  .blogs .box-container .box .content .icon a:hover {
+    color: #d9296f;
+  }
+  
+  .blogs .box-container .box .content .icon a i {
+    padding-right: .5rem;
+    color: #d9296f;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('testing.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+header {
+        background-color: rgba(52, 152, 219, 0.8); 
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+    }
+
+.booking-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.flight-results {
+    margin: 20px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+footer {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
